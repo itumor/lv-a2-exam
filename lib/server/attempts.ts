@@ -44,6 +44,8 @@ type Stored = {
 };
 
 export const MAX_ATTEMPTS = 500;
+/** A learner may take this long over the first question before the attempt counts as idle. */
+export const IDLE_GRACE_MS = 5 * 60_000;
 const g = globalThis as { __attempts?: Map<string, Stored> };
 const SAMPLE_ID = "mock-exam-1";
 const store = (g.__attempts ??= new Map([[SAMPLE_ID, sampleAttempt()]]));
@@ -60,16 +62,18 @@ function read(id: string, now = Date.now()): Stored | undefined {
 
 /**
  * Pick an attempt to drop when the store is full. Oldest first within each rule:
- * 1. finished (not active), 2. started but never answered (what a flood of
- * anonymous starts looks like), 3. stalled (time ran out and the learner never
- * continued). An attempt with answers and a running section is never dropped.
+ * 1. finished (not active), 2. started more than IDLE_GRACE_MS ago and still
+ * without a single answer (what a flood of anonymous starts looks like),
+ * 3. stalled (time ran out and the learner never continued).
+ * An attempt with answers and a running section is never dropped, and neither
+ * is one that has only just started.
  */
 function evictable(now: number): string | undefined {
   const ids = [...store.keys()].filter((k) => k !== SAMPLE_ID);
   const attempt = (k: string) => read(k, now)!.attempt;
   return (
     ids.find((k) => attempt(k).status !== "active") ??
-    ids.find((k) => Object.keys(attempt(k).answers).length === 0) ??
+    ids.find((k) => Object.keys(attempt(k).answers).length === 0 && now - (attempt(k).startedAt ?? now) > IDLE_GRACE_MS) ??
     ids.find((k) => SKILLS.every((skill) => attempt(k).sections[skill].status !== "in_progress"))
   );
 }

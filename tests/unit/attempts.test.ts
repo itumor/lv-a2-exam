@@ -101,11 +101,14 @@ describe("attempt store", () => {
     expect(getRunnerView(answering[0], later)).toBeNull();
     expect(getRunnerView(answering[1], later)).toMatchObject({ state: "section_closed" });
 
-    // a flood of starts that never answer only ever replaces idle attempts
-    const idle = startExam(later)!;
-    expect(getRunnerView(fresh, later)).toBeNull();
-    startExam(later);
-    expect(getRunnerView(idle, later)).toBeNull();
-    expect(getRunnerView(answering[2], later)).not.toBeNull();
+    // an attempt that has only just started is protected too, even without answers...
+    const idle = startExam(later)!; // the next stalled one makes room for it
+    expect(getRunnerView(answering[1], later)).toBeNull();
+    for (let id = startExam(later); id; id = startExam(later)); // use up every stalled slot
+    expect(startExam(later + 4 * MIN)).toBeNull();
+    expect(getRunnerView(idle, later + 4 * MIN)).toMatchObject({ state: "running" });
+    // ...but after the grace period an unanswered attempt gives way
+    expect(startExam(later + 6 * MIN)).not.toBeNull();
+    expect(getRunnerView(fresh, later + 6 * MIN)).toBeNull();
   });
 });
