@@ -93,7 +93,11 @@ export function startSection(attempt: Attempt, skill: Skill, now: number): Resul
   return ok({ ...started, status: "active", startedAt: a.startedAt ?? now });
 }
 
-/** Save one answer. Rejected after the deadline or once the section is closed. */
+/**
+ * Save one answer. Rejected after the deadline or once the section is closed.
+ * `skill` MUST be the section the item belongs to, looked up on the server from
+ * the item id. Never pass a section name that came from the client.
+ */
 export function saveAnswer(
   attempt: Attempt,
   skill: Skill,

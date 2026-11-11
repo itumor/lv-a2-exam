@@ -1,0 +1,1294 @@
+{
+  "schemaVersion": 1,
+  "examSetSlug": "a2-original-001",
+  "version": 1,
+  "title": "Mock exam 2",
+  "level": "A2",
+  "blueprintId": "viaa-a2-2026",
+  "status": "draft",
+  "reviewed_by": null,
+  "notes": [
+    "DRAFT. All Latvian text is unreviewed. Do not publish before a native-speaker teacher approves it.",
+    "Items come from the design mockups plus placeholders marked [VIETTURIS] and placeholder: true. Placeholder answer keys are arbitrary.",
+    "Speaking tasks 1 and 2 share 12 official points. The 6/6 split is our provisional rubric, not a VIAA weight.",
+    "No audio has been recorded: every audio asset has src null."
+  ],
+  "tasks": [
+    {
+      "section": "listening",
+      "taskNumber": 1,
+      "instructionLv": "Klausieties paziņojumu! Tas skanēs divas reizes. Atzīmējiet pareizo atbildi!",
+      "layout": "per_item",
+      "shared": {},
+      "placeholder": false,
+      "unitLv": "paziņojums"
+    },
+    {
+      "section": "listening",
+      "taskNumber": 2,
+      "instructionLv": "Klausieties dialogu! Tas skanēs divas reizes. Atzīmējiet, vai apgalvojums ir pareizs vai nepareizs!",
+      "layout": "all_items",
+      "shared": {
+        "media": {
+          "id": "L2",
+          "kind": "audio",
+          "src": null,
+          "sha256": null,
+          "durationSec": 60,
+          "transcriptLv": "[VIETTURIS] Dialoga teksts",
+          "reviewStatus": "draft",
+          "placeholder": true
+        }
+      },
+      "placeholder": true
+    },
+    {
+      "section": "listening",
+      "taskNumber": 3,
+      "instructionLv": "Klausieties dialogu! Tas skanēs divas reizes. Izvēlieties vārdu, kura trūkst teikumā! Četri vārdi ir lieki.",
+      "layout": "per_item",
+      "shared": {
+        "wordBank": [
+          {
+            "id": "w1",
+            "lv": "[VIETTURIS] 1"
+          },
+          {
+            "id": "w2",
+            "lv": "[VIETTURIS] 2"
+          },
+          {
+            "id": "w3",
+            "lv": "[VIETTURIS] 3"
+          },
+          {
+            "id": "w4",
+            "lv": "[VIETTURIS] 4"
+          },
+          {
+            "id": "w5",
+            "lv": "[VIETTURIS] 5"
+          },
+          {
+            "id": "w6",
+            "lv": "[VIETTURIS] 6"
+          },
+          {
+            "id": "w7",
+            "lv": "[VIETTURIS] 7"
+          },
+          {
+            "id": "w8",
+            "lv": "[VIETTURIS] 8"
+          },
+          {
+            "id": "w9",
+            "lv": "[VIETTURIS] 9"
+          }
+        ]
+      },
+      "placeholder": true,
+      "unitLv": "dialogs"
+    },
+    {
+      "section": "reading",
+      "taskNumber": 1,
+      "instructionLv": "Izlasiet tekstu! Atzīmējiet apgalvojumu, kas atbilst tekstam!",
+      "layout": "per_item",
+      "shared": {},
+      "placeholder": true,
+      "unitLv": "teksts"
+    },
+    {
+      "section": "reading",
+      "taskNumber": 2,
+      "instructionLv": "Atrodiet, kurš sludinājums (A–D) atbilst situācijai!",
+      "layout": "per_item",
+      "shared": {
+        "adverts": [
+          {
+            "id": "A",
+            "titleLv": "Frizētava „Stils”.",
+            "bodyLv": "Matu griešana un krāsošana. Strādājam katru dienu no 9.00 līdz 19.00."
+          },
+          {
+            "id": "B",
+            "titleLv": "Izīrē divistabu dzīvokli",
+            "bodyLv": "Jelgavas centrā. Blakus ir parks un veikals. Īres maksa – 350 EUR mēnesī."
+          },
+          {
+            "id": "C",
+            "titleLv": "Velosipēdu darbnīca.",
+            "bodyLv": "Ātri salabojam velosipēdus. Darbam ir 6 mēnešu garantija. Tālr. [NUMURS]."
+          },
+          {
+            "id": "D",
+            "titleLv": "Latviešu valodas kursi",
+            "bodyLv": "pieaugušajiem. Nodarbības notiek vakaros, divas reizes nedēļā."
+          }
+        ]
+      },
+      "placeholder": false,
+      "unitLv": "situācija"
+    },
+    {
+      "section": "reading",
+      "taskNumber": 3,
+      "instructionLv": "Izlasiet tekstu un izvēlieties pareizo vārdu!",
+      "layout": "all_items",
+      "shared": {
+        "textLv": "[VIETTURIS] Teksts (apmēram 100 vārdu), kurā trūkst pieci vārdi: (1) ___, (2) ___, (3) ___, (4) ___ un (5) ___."
+      },
+      "placeholder": true
+    },
+    {
+      "section": "writing",
+      "taskNumber": 1,
+      "instructionLv": "Uzrakstiet aprakstu par personu! Izmantojiet attēlu un vizītkarti.",
+      "layout": "per_item",
+      "shared": {},
+      "placeholder": true
+    },
+    {
+      "section": "writing",
+      "taskNumber": 2,
+      "instructionLv": "Ierakstiet iekavās doto vārdu pareizā formā!",
+      "layout": "all_items",
+      "shared": {},
+      "placeholder": false
+    },
+    {
+      "section": "writing",
+      "taskNumber": 3,
+      "instructionLv": "Uzrakstiet e-pastu pēc plāna!",
+      "layout": "per_item",
+      "shared": {},
+      "placeholder": false
+    },
+    {
+      "section": "speaking",
+      "taskNumber": 1,
+      "instructionLv": "Atbildiet uz eksaminētāja jautājumiem!",
+      "layout": "per_item",
+      "shared": {},
+      "placeholder": true,
+      "unitLv": "jautājums"
+    },
+    {
+      "section": "speaking",
+      "taskNumber": 2,
+      "instructionLv": "Pastāstiet par attēliem!",
+      "layout": "per_item",
+      "shared": {},
+      "placeholder": false,
+      "unitLv": "attēls"
+    },
+    {
+      "section": "speaking",
+      "taskNumber": 3,
+      "instructionLv": "Uzdodiet jautājumus par sludinājumiem!",
+      "layout": "per_item",
+      "shared": {},
+      "placeholder": true,
+      "unitLv": "sludinājums"
+    }
+  ],
+  "sections": {
+    "listening": [
+      {
+        "externalId": "A2-ORIGINAL-001-L1-Q1",
+        "section": "listening",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] atbilde A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] atbilde B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] atbilde C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L1-1",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 20,
+            "transcriptLv": "[VIETTURIS] 1. paziņojuma teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 1. paziņojuma jautājums"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L1-Q2",
+        "section": "listening",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "Pulksten 18.00."
+          },
+          {
+            "id": "B",
+            "lv": "Pulksten 19.00."
+          },
+          {
+            "id": "C",
+            "lv": "Pulksten 19.30."
+          }
+        ],
+        "answerKey": {
+          "correct": "B"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L1-2",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 21,
+            "transcriptLv": "Uzmanību! Šovakar kultūras namā būs koncerts. Durvis atvērsim pulksten 18.30. Koncerts sāksies pulksten 19.00.",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": false,
+        "prompt": {
+          "lv": "Cikos sāksies koncerts?"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L1-Q3",
+        "section": "listening",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] atbilde A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] atbilde B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] atbilde C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L1-3",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 20,
+            "transcriptLv": "[VIETTURIS] 3. paziņojuma teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 3. paziņojuma jautājums"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L1-Q4",
+        "section": "listening",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] atbilde A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] atbilde B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] atbilde C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L1-4",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 20,
+            "transcriptLv": "[VIETTURIS] 4. paziņojuma teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 4. paziņojuma jautājums"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L1-Q5",
+        "section": "listening",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] atbilde A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] atbilde B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] atbilde C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L1-5",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 20,
+            "transcriptLv": "[VIETTURIS] 5. paziņojuma teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 5. paziņojuma jautājums"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L1-Q6",
+        "section": "listening",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] atbilde A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] atbilde B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] atbilde C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L1-6",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 20,
+            "transcriptLv": "[VIETTURIS] 6. paziņojuma teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 6. paziņojuma jautājums"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L2-Q1",
+        "section": "listening",
+        "taskNumber": 2,
+        "kind": "true_false",
+        "options": [],
+        "answerKey": {
+          "correct": "true"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 1. apgalvojums par dialogu"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L2-Q2",
+        "section": "listening",
+        "taskNumber": 2,
+        "kind": "true_false",
+        "options": [],
+        "answerKey": {
+          "correct": "false"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 2. apgalvojums par dialogu"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L2-Q3",
+        "section": "listening",
+        "taskNumber": 2,
+        "kind": "true_false",
+        "options": [],
+        "answerKey": {
+          "correct": "true"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 3. apgalvojums par dialogu"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L2-Q4",
+        "section": "listening",
+        "taskNumber": 2,
+        "kind": "true_false",
+        "options": [],
+        "answerKey": {
+          "correct": "false"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 4. apgalvojums par dialogu"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L3-Q1",
+        "section": "listening",
+        "taskNumber": 3,
+        "kind": "word_bank",
+        "options": [],
+        "answerKey": {
+          "correct": "w1"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L3-1",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 15,
+            "transcriptLv": "[VIETTURIS] 1. īsā dialoga teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 1. teikums ar ___ vietā, kur trūkst vārda."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L3-Q2",
+        "section": "listening",
+        "taskNumber": 3,
+        "kind": "word_bank",
+        "options": [],
+        "answerKey": {
+          "correct": "w2"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L3-2",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 15,
+            "transcriptLv": "[VIETTURIS] 2. īsā dialoga teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 2. teikums ar ___ vietā, kur trūkst vārda."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L3-Q3",
+        "section": "listening",
+        "taskNumber": 3,
+        "kind": "word_bank",
+        "options": [],
+        "answerKey": {
+          "correct": "w3"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L3-3",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 15,
+            "transcriptLv": "[VIETTURIS] 3. īsā dialoga teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 3. teikums ar ___ vietā, kur trūkst vārda."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L3-Q4",
+        "section": "listening",
+        "taskNumber": 3,
+        "kind": "word_bank",
+        "options": [],
+        "answerKey": {
+          "correct": "w4"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L3-4",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 15,
+            "transcriptLv": "[VIETTURIS] 4. īsā dialoga teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 4. teikums ar ___ vietā, kur trūkst vārda."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-L3-Q5",
+        "section": "listening",
+        "taskNumber": 3,
+        "kind": "word_bank",
+        "options": [],
+        "answerKey": {
+          "correct": "w5"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "L3-5",
+            "kind": "audio",
+            "src": null,
+            "sha256": null,
+            "durationSec": 15,
+            "transcriptLv": "[VIETTURIS] 5. īsā dialoga teksts",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 5. teikums ar ___ vietā, kur trūkst vārda."
+        }
+      }
+    ],
+    "reading": [
+      {
+        "externalId": "A2-ORIGINAL-001-R1-Q1",
+        "section": "reading",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] apgalvojums A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] apgalvojums B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] apgalvojums C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "Kurš apgalvojums atbilst tekstam?",
+          "textLv": "[VIETTURIS] 1. teksts (apmēram 75 vārdi)."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R1-Q2",
+        "section": "reading",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] apgalvojums A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] apgalvojums B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] apgalvojums C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "Kurš apgalvojums atbilst tekstam?",
+          "textLv": "[VIETTURIS] 2. teksts (apmēram 75 vārdi)."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R1-Q3",
+        "section": "reading",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] apgalvojums A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] apgalvojums B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] apgalvojums C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "Kurš apgalvojums atbilst tekstam?",
+          "textLv": "[VIETTURIS] 3. teksts (apmēram 75 vārdi)."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R1-Q4",
+        "section": "reading",
+        "taskNumber": 1,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] apgalvojums A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] apgalvojums B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] apgalvojums C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "Kurš apgalvojums atbilst tekstam?",
+          "textLv": "[VIETTURIS] 4. teksts (apmēram 75 vārdi)."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R2-Q1",
+        "section": "reading",
+        "taskNumber": 2,
+        "kind": "match",
+        "options": [],
+        "answerKey": {
+          "correct": "C"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": false,
+        "prompt": {
+          "lv": "Marta uz darbu brauc ar velosipēdu. Vakar velosipēdam salūza bremzes. Viņa meklē meistaru, kas to var salabot."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R2-Q2",
+        "section": "reading",
+        "taskNumber": 2,
+        "kind": "match",
+        "options": [],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 2. situācija"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R2-Q3",
+        "section": "reading",
+        "taskNumber": 2,
+        "kind": "match",
+        "options": [],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 3. situācija"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R2-Q4",
+        "section": "reading",
+        "taskNumber": 2,
+        "kind": "match",
+        "options": [],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 4. situācija"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R2-Q5",
+        "section": "reading",
+        "taskNumber": 2,
+        "kind": "match",
+        "options": [],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 5. situācija"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R2-Q6",
+        "section": "reading",
+        "taskNumber": 2,
+        "kind": "match",
+        "options": [],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 6. situācija"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R3-Q1",
+        "section": "reading",
+        "taskNumber": 3,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] vārds A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] vārds B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] vārds C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "(1)"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R3-Q2",
+        "section": "reading",
+        "taskNumber": 3,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] vārds A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] vārds B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] vārds C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "(2)"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R3-Q3",
+        "section": "reading",
+        "taskNumber": 3,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] vārds A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] vārds B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] vārds C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "(3)"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R3-Q4",
+        "section": "reading",
+        "taskNumber": 3,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] vārds A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] vārds B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] vārds C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "(4)"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-R3-Q5",
+        "section": "reading",
+        "taskNumber": 3,
+        "kind": "single_choice",
+        "options": [
+          {
+            "id": "A",
+            "lv": "[VIETTURIS] vārds A"
+          },
+          {
+            "id": "B",
+            "lv": "[VIETTURIS] vārds B"
+          },
+          {
+            "id": "C",
+            "lv": "[VIETTURIS] vārds C"
+          }
+        ],
+        "answerKey": {
+          "correct": "A"
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "(5)"
+        }
+      }
+    ],
+    "writing": [
+      {
+        "externalId": "A2-ORIGINAL-001-W1-Q1",
+        "section": "writing",
+        "taskNumber": 1,
+        "kind": "free_text",
+        "options": [],
+        "answerKey": null,
+        "maxPoints": 4,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "W1-img1",
+            "kind": "image",
+            "src": null,
+            "sha256": null,
+            "descriptionLv": "[VIETTURIS] Personas attēls",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] Uzrakstiet aprakstu par personu – minimums 30 vārdu!",
+          "cardLv": [
+            "[VIETTURIS] Vārds, uzvārds",
+            "[VIETTURIS] Nodarbošanās",
+            "[VIETTURIS] Ģimene",
+            "[VIETTURIS] Vaļasprieks"
+          ]
+        },
+        "minWords": 30
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-W2-Q1",
+        "section": "writing",
+        "taskNumber": 2,
+        "kind": "word_form",
+        "options": [],
+        "answerKey": {
+          "accepted": [
+            "vasarai"
+          ]
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": false,
+        "prompt": {
+          "lv": "Mēs gatavojamies ___ (vasara)."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-W2-Q2",
+        "section": "writing",
+        "taskNumber": 2,
+        "kind": "word_form",
+        "options": [],
+        "answerKey": {
+          "accepted": [
+            "vietturis"
+          ]
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 2. virsraksts ar ___ (vārds)."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-W2-Q3",
+        "section": "writing",
+        "taskNumber": 2,
+        "kind": "word_form",
+        "options": [],
+        "answerKey": {
+          "accepted": [
+            "vietturis"
+          ]
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 3. virsraksts ar ___ (vārds)."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-W2-Q4",
+        "section": "writing",
+        "taskNumber": 2,
+        "kind": "word_form",
+        "options": [],
+        "answerKey": {
+          "accepted": [
+            "vietturis"
+          ]
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 4. virsraksts ar ___ (vārds)."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-W2-Q5",
+        "section": "writing",
+        "taskNumber": 2,
+        "kind": "word_form",
+        "options": [],
+        "answerKey": {
+          "accepted": [
+            "vietturis"
+          ]
+        },
+        "maxPoints": 1,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "[VIETTURIS] 5. virsraksts ar ___ (vārds)."
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-W3-Q1",
+        "section": "writing",
+        "taskNumber": 3,
+        "kind": "free_text",
+        "options": [],
+        "answerKey": null,
+        "maxPoints": 6,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": false,
+        "prompt": {
+          "lv": "Iedomājieties, ka jūs sestdien bijāt koncertā. Uzrakstiet draugam e-pastu, kurā:",
+          "planLv": [
+            [
+              "sasveicinieties",
+              ";"
+            ],
+            [
+              "pastāstiet",
+              ", kur un kad bija koncerts;"
+            ],
+            [
+              "uzrakstiet",
+              ", kas jums patika un kas nepatika;"
+            ],
+            [
+              "uzaiciniet",
+              " draugu uz nākamo koncertu;"
+            ],
+            [
+              "atvadieties",
+              "."
+            ]
+          ]
+        },
+        "targetWords": 35
+      }
+    ],
+    "speaking": [
+      {
+        "externalId": "A2-ORIGINAL-001-S1-Q1",
+        "section": "speaking",
+        "taskNumber": 1,
+        "kind": "interview",
+        "options": [],
+        "answerKey": null,
+        "maxPoints": 6,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "Atbildiet uz jautājumiem! Runājiet pilnos teikumos!",
+          "questionsLv": [
+            "[VIETTURIS] 1. jautājums par ikdienu",
+            "[VIETTURIS] 2. jautājums par ikdienu",
+            "[VIETTURIS] 3. jautājums par ikdienu",
+            "[VIETTURIS] 4. jautājums par ikdienu",
+            "[VIETTURIS] 5. jautājums par ikdienu",
+            "[VIETTURIS] 6. jautājums par ikdienu",
+            "[VIETTURIS] 7. jautājums par ikdienu",
+            "[VIETTURIS] 8. jautājums par ikdienu",
+            "[VIETTURIS] 9. jautājums par ikdienu",
+            "[VIETTURIS] 10. jautājums par ikdienu"
+          ]
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-S2-Q1",
+        "section": "speaking",
+        "taskNumber": 2,
+        "kind": "picture_description",
+        "options": [],
+        "answerKey": null,
+        "maxPoints": 6,
+        "rubricVersion": "a2-2026-v1",
+        "media": [
+          {
+            "id": "S2-img1",
+            "kind": "image",
+            "src": "media/park-scene.svg",
+            "sha256": "b5bab7e5e1fd7ffbb2a0424910a65575dc1528df36660aa64e85700a22b5e401",
+            "descriptionLv": "Parks vasarā: divi cilvēki sēž uz soliņa, bērns spēlē bumbu, sieviete brauc ar velosipēdu",
+            "reviewStatus": "draft",
+            "placeholder": true
+          },
+          {
+            "id": "S2-img2",
+            "kind": "image",
+            "src": null,
+            "sha256": null,
+            "descriptionLv": "[VIETTURIS] Otrais attēls",
+            "reviewStatus": "draft",
+            "placeholder": true
+          }
+        ],
+        "placeholder": false,
+        "prompt": {
+          "lv": "Aprakstiet attēlu: personas, darbības, vietu, laiku! Runājiet pilnos teikumos!"
+        }
+      },
+      {
+        "externalId": "A2-ORIGINAL-001-S3-Q1",
+        "section": "speaking",
+        "taskNumber": 3,
+        "kind": "ask_questions",
+        "options": [],
+        "answerKey": null,
+        "maxPoints": 3,
+        "rubricVersion": "a2-2026-v1",
+        "media": [],
+        "placeholder": true,
+        "prompt": {
+          "lv": "Uzdodiet jautājumu, lai uzzinātu informāciju, kuras sludinājumā trūkst!",
+          "advertsLv": [
+            {
+              "id": "1",
+              "titleLv": "[VIETTURIS] 1. sludinājums",
+              "bodyLv": "[VIETTURIS] Sludinājuma teksts. Trūkst: ???"
+            },
+            {
+              "id": "2",
+              "titleLv": "[VIETTURIS] 2. sludinājums",
+              "bodyLv": "[VIETTURIS] Sludinājuma teksts. Trūkst: ???"
+            },
+            {
+              "id": "3",
+              "titleLv": "[VIETTURIS] 3. sludinājums",
+              "bodyLv": "[VIETTURIS] Sludinājuma teksts. Trūkst: ???"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
