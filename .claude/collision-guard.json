@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "gen": 1,
+  "files": {
+    "claude.md": {
+      "path": "CLAUDE.md",
+      "session": "58533091-eee2-46c1-a4bf-6d679f71822d",
+      "agent": "main",
+      "modifiedAt": "2026-11-11T15:40:30.095Z",
+      "leaseExpiresAt": "2026-11-11T16:10:30.095Z"
+    }
+  },
+  "sessions": {
+    "58533091-eee2-46c1-a4bf-6d679f71822d": {
+      "lastSeen": "2026-11-11T15:40:30.095Z"
+    }
+  }
+}

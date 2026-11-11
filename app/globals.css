@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Design tokens from Designing/tokens/design-tokens.json */
+@theme {
+  --font-sans: var(--font-nunito), system-ui, sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-ground: #f5f4fb;
+  --color-surface: #ffffff;
+  --color-ink: #1f1b3a;
+  --color-ink-soft: #4a4664;
+  --color-muted: #5e5a78;
+  --color-line: #e3e0f2;
+  --color-line-strong: #c9c4e2;
+  --color-track: #dad6ee;
+  --color-track-soft: #e6e3f3;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: #5a3fd6;
+  --color-primary-shadow: #3f2aa8;
+  --color-primary-text: #4b32c3;
+  --color-primary-text-hover: #35228f;
+  --color-primary-tint: #ece8ff;
+  --color-on-primary-soft: #e4deff;
+
+  --color-accent: #ffc83d;
+  --color-accent-shadow: #c99400;
+  --color-accent-tint: #fff1cc;
+  --color-accent-text: #6b4a00;
+
+  --color-listening: #1668c7;
+  --color-listening-shadow: #0f4f9c;
+  --color-listening-tint: #e3effc;
+  --color-listening-soft: #8db9ec;
+  --color-reading: #16794f;
+  --color-reading-shadow: #0f5c3b;
+  --color-reading-tint: #dff3ea;
+  --color-writing: #b8470e;
+  --color-writing-shadow: #8a3409;
+  --color-writing-tint: #fce9dc;
+  --color-speaking: #a8247a;
+  --color-speaking-shadow: #7d1a5a;
+  --color-speaking-tint: #f9e1f0;
+
+  --color-pass: #16794f;
+  --color-pass-tint: #dff3ea;
+  --color-pass-text: #0f5c3b;
+  --color-fail: #b8470e;
+  --color-fail-tint: #fce9dc;
+  --color-fail-text: #8a3409;
+  --color-danger: #b42318;
+  --color-danger-tint: #fde7e4;
+
+  --radius-key: 12px;
+  --radius-control: 14px;
+  --radius-button: 16px;
+  --radius-card: 18px;
+  --radius-card-lg: 24px;
+  --radius-hero: 28px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ground);
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-primary-text);
+}
+a:hover {
+  color: var(--color-primary-text-hover);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Page gutter: 20px on phones, the desktop clamp from 768px up. */
+.gutter {
+  padding-inline: 20px;
+}
+@media (min-width: 768px) {
+  .gutter {
+    padding-inline: clamp(16px, 4vw, 40px);
+  }
 }
