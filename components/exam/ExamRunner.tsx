@@ -303,7 +303,12 @@ function Response({ skill, task, items, part, answers, onAnswer }: { skill: Skil
             />
           </div>
         ))}
-        <LatvianKeys onInsert={(letter) => active.current && onAnswer(active.current.id, { text: insertAtCaret(active.current, letter) })} />
+        <LatvianKeys
+          onInsert={(letter) => {
+            const el = active.current;
+            if (el) insertAtCaret(el, letter, (text) => onAnswer(el.id, { text }));
+          }}
+        />
       </>
     );
   }

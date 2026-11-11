@@ -17,6 +17,7 @@ const T = {
     title: (n: number) => `Writing, task ${n}`,
     explainIn: "Explain in",
     yourText: "Your text",
+    yourEmail: "Your e-mail",
     words: (n: number, target: number | null) => `${n} words${target ? ` · target about ${target}` : ""}`,
     taskScore: "Task score",
     corrections: "Corrections",
@@ -32,6 +33,7 @@ const T = {
     title: (n: number) => `الكتابة، المهمة ${n}`,
     explainIn: "لغة الشرح",
     yourText: "نصّك",
+    yourEmail: "رسالتك",
     words: (n: number, target: number | null) => `${n} كلمة${target ? ` · المطلوب نحو ${target}` : ""}`,
     taskScore: "درجة المهمة",
     corrections: "التصحيحات",
@@ -76,7 +78,7 @@ export function FeedbackView({ view }: { view: View }) {
   const confidence = (
     <>
       <span>{grade ? t.confidence[grade.uncertainty] : t.keyed}</span>
-      <Link href="/coming-soon" className="py-3 font-black">
+      <Link href="/coming-soon" className="inline-flex min-h-11 items-center font-black underline">
         {t.review}
       </Link>
     </>
@@ -123,7 +125,7 @@ export function FeedbackView({ view }: { view: View }) {
             {view.learnerText && (
               <Card as="section" chunky className="hidden rounded-card-lg p-6 lg:block">
                 <div className="flex items-baseline justify-between gap-3">
-                  <h2 className="m-0 text-lg font-black">{t.yourText}</h2>
+                  <h2 className="m-0 text-lg font-black">{view.task === 3 ? t.yourEmail : t.yourText}</h2>
                   <span className="text-sm font-extrabold text-fail-text">{t.words(countWords(view.learnerText), view.targetWords)}</span>
                 </div>
                 <p lang="lv" dir="ltr" className="mt-3.5 mb-0 text-xl leading-[1.7] whitespace-pre-line">

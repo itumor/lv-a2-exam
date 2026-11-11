@@ -43,7 +43,7 @@ type Stored = {
   practiseNext: string | null;
 };
 
-const MAX_ATTEMPTS = 500;
+export const MAX_ATTEMPTS = 500;
 const g = globalThis as { __attempts?: Map<string, Stored> };
 const SAMPLE_ID = "mock-exam-1";
 const store = (g.__attempts ??= new Map([[SAMPLE_ID, sampleAttempt()]]));
@@ -58,14 +58,19 @@ function read(id: string, now = Date.now()): Stored | undefined {
   return s;
 }
 
-/** Create an attempt and start the listening section. */
-export function startExam(now = Date.now()): string {
+/**
+ * Create an attempt and start the listening section.
+ * Returns null when the store is full of attempts that are still in progress:
+ * a running exam is never evicted to make room for a new one.
+ */
+export function startExam(now = Date.now()): string | null {
+  if (store.size >= MAX_ATTEMPTS) {
+    const finished = [...store.keys()].find((k) => k !== SAMPLE_ID && read(k, now)?.attempt.status !== "active");
+    if (!finished) return null;
+    store.delete(finished);
+  }
   const id = crypto.randomUUID();
   const started = startSection(createAttempt(id, loadExamSet().examSetSlug), "listening", now);
-  if (store.size >= MAX_ATTEMPTS) {
-    const oldest = [...store.keys()].find((k) => k !== SAMPLE_ID);
-    if (oldest) store.delete(oldest);
-  }
   store.set(id, { attempt: started.attempt, title: loadExamSet().title, grades: {}, taskScores: {}, practiseNext: null });
   return id;
 }

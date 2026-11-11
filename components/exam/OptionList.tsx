@@ -15,7 +15,7 @@ export function OptionList({ name, label, options, value, onChange, skill }: { n
           <label
             key={o.id}
             className={cx(
-              "flex min-h-14 cursor-pointer items-center gap-3 rounded-button border-2 border-b-4 px-3.5 py-2.5 text-[17px] lg:min-h-16 lg:gap-3.5 lg:rounded-card lg:px-[18px] lg:py-3 lg:text-[19px]",
+              "flex min-h-[62px] cursor-pointer items-center gap-3 rounded-button border-2 border-b-4 px-3.5 py-2.5 text-[17px] lg:min-h-[70px] lg:gap-3.5 lg:rounded-card lg:px-[18px] lg:py-3 lg:text-[19px]",
               checked ? cx(ui.tint, ui.border, ui.text, "font-black") : "border-line bg-surface font-extrabold text-ink",
             )}
           >

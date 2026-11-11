@@ -4,10 +4,18 @@ import { useRef } from "react";
 export const LATVIAN_LETTERS = ["ā", "č", "ē", "ģ", "ī", "ķ", "ļ", "ņ", "š", "ū", "ž"];
 export const countWords = (text: string) => text.trim().split(/\s+/).filter(Boolean).length;
 
-/** Insert `text` at the caret of a field and return the new value. */
-export function insertAtCaret(el: HTMLInputElement | HTMLTextAreaElement, text: string): string {
-  el.setRangeText(text, el.selectionStart ?? el.value.length, el.selectionEnd ?? el.value.length, "end");
-  return el.value;
+/**
+ * Insert `text` at the caret of a controlled field. The DOM value is not touched
+ * (React would then miss the next change); the new value goes through `onChange`
+ * and the caret is restored after the re-render.
+ */
+export function insertAtCaret(el: HTMLInputElement | HTMLTextAreaElement, text: string, onChange: (value: string) => void) {
+  const start = el.selectionStart ?? el.value.length;
+  const end = el.selectionEnd ?? start;
+  const value = el.value.slice(0, start) + text + el.value.slice(end);
+  if (el.maxLength > 0 && value.length > el.maxLength) return;
+  onChange(value);
+  requestAnimationFrame(() => el.setSelectionRange(start + text.length, start + text.length));
 }
 
 /** Keys for the letters a non-Latvian keyboard lacks. */
@@ -61,7 +69,7 @@ export function WritingEditor({ id, label, value, onChange, targetWords }: { id:
           <div className="h-2 rounded-full bg-writing" style={{ width: `${Math.min(100, (words / targetWords) * 100)}%` }} />
         </div>
       </div>
-      <LatvianKeys onInsert={(letter) => field.current && onChange(insertAtCaret(field.current, letter))} />
+      <LatvianKeys onInsert={(letter) => field.current && insertAtCaret(field.current, letter, onChange)} />
     </div>
   );
 }

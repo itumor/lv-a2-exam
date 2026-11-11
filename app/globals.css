@@ -49,6 +49,14 @@
   --color-danger: #b42318;
   --color-danger-tint: #fde7e4;
 
+  /* The designs use the font's normal line height unless a screen sets one. */
+  --text-xs--line-height: normal;
+  --text-sm--line-height: normal;
+  --text-base--line-height: normal;
+  --text-lg--line-height: normal;
+  --text-xl--line-height: normal;
+  --text-2xl--line-height: normal;
+
   --radius-key: 12px;
   --radius-control: 14px;
   --radius-button: 16px;
@@ -58,6 +66,10 @@
 }
 
 @layer base {
+  html {
+    line-height: normal;
+  }
+
 body {
   background: var(--color-ground);
   color: var(--color-ink);

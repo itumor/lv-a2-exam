@@ -40,7 +40,7 @@ export default async function ResultsPage({ params }: PageProps<"/exam/[id]/resu
       <ChunkyButton href={`/exam/${id}/results/writing/3`} variant="accent" className="lg:px-7">
         See writing corrections
       </ChunkyButton>
-      <Link href="/coming-soon" className="flex h-11 items-center justify-center text-[15px] font-black">
+      <Link href="/coming-soon" className="flex h-11 items-center justify-center text-[15px] font-black no-underline lg:underline">
         Retake writing only
       </Link>
     </>

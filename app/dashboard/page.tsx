@@ -65,7 +65,7 @@ export default async function DashboardPage() {
                   <div className="text-sm leading-[1.4] text-muted">{words.short}</div>
                 </div>
               </div>
-              <Link href={`/exam/${last.attemptId}/results`} className="mt-auto py-3 text-[15px] font-black">
+              <Link href={`/exam/${last.attemptId}/results`} className="mt-auto py-3 text-[15px] font-black underline">
                 See full results
               </Link>
             </Card>

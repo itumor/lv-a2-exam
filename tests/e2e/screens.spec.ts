@@ -92,7 +92,8 @@ test("full exam run through all four parts", async ({ page }) => {
   await expect(page.getByRole("radio", { name: "Pulksten 19.00." })).toBeChecked();
   await page.getByRole("button", { name: "Atskaņot ierakstu" }).click();
   await expect(page.getByRole("button", { name: "Apturēt ierakstu" })).toBeVisible();
-  await page.waitForTimeout(1200);
+  await page.waitForTimeout(2200);
+  await expect(page.getByText("0:02 / 0:21")).toBeVisible();
   await expectTouchTargets(page);
   await shot(page, "Listening");
 
@@ -119,6 +120,8 @@ test("full exam run through all four parts", async ({ page }) => {
   await page.getByRole("button", { name: "ļ" }).click();
   await expect(page.getByLabel("Jūsu e-pasts")).toHaveValue(/bet ļ$/);
   await page.getByLabel("Jūsu e-pasts").press("Backspace");
+  await expect(page.getByText("15 no 35 vārdiem")).toBeVisible();
+  await page.getByLabel("Jūsu e-pasts").blur();
   await expectTouchTargets(page);
   await shot(page, "Writing");
 
