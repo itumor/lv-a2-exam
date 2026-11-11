@@ -59,15 +59,30 @@ function read(id: string, now = Date.now()): Stored | undefined {
 }
 
 /**
- * Create an attempt and start the listening section.
- * Returns null when the store is full of attempts that are still in progress:
- * a running exam is never evicted to make room for a new one.
+ * Pick an attempt to drop when the store is full. Oldest first within each rule:
+ * 1. finished (not active), 2. started but never answered (what a flood of
+ * anonymous starts looks like), 3. stalled (time ran out and the learner never
+ * continued). An attempt with answers and a running section is never dropped.
+ */
+function evictable(now: number): string | undefined {
+  const ids = [...store.keys()].filter((k) => k !== SAMPLE_ID);
+  const attempt = (k: string) => read(k, now)!.attempt;
+  return (
+    ids.find((k) => attempt(k).status !== "active") ??
+    ids.find((k) => Object.keys(attempt(k).answers).length === 0) ??
+    ids.find((k) => SKILLS.every((skill) => attempt(k).sections[skill].status !== "in_progress"))
+  );
+}
+
+/**
+ * Create an attempt and start the listening section. Returns null only when
+ * the store is full of exams that are genuinely in progress.
  */
 export function startExam(now = Date.now()): string | null {
   if (store.size >= MAX_ATTEMPTS) {
-    const finished = [...store.keys()].find((k) => k !== SAMPLE_ID && read(k, now)?.attempt.status !== "active");
-    if (!finished) return null;
-    store.delete(finished);
+    const drop = evictable(now);
+    if (!drop) return null;
+    store.delete(drop);
   }
   const id = crypto.randomUUID();
   const started = startSection(createAttempt(id, loadExamSet().examSetSlug), "listening", now);

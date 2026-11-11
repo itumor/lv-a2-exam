@@ -84,18 +84,28 @@ describe("attempt store", () => {
     expect(r.outcome).toEqual({ status: "final", total: 40, passed: false, below: [{ skill: "writing", short: 2 }] });
     expect(getFeedbackView("mock-exam-1", 3)).toMatchObject({ score: 3, max: 6, grade: { points: 3 } });
   });
-  it("a full store never evicts a running exam; it makes room only from finished ones", async () => {
-    const T = T0 + 24 * 60 * MIN; // later than every attempt above, so those have expired
-    const running: string[] = [];
-    for (let id = startExam(T); id; id = startExam(T)) running.push(id);
-    expect(running.length).toBeGreaterThan(0);
-    expect(running.length).toBeLessThanOrEqual(MAX_ATTEMPTS);
+  it("a full store drops idle and stalled attempts, never an exam that is being answered", () => {
+    const T = T0 + 24 * 60 * MIN; // every attempt above has run out of time by now
+    const answering = Array.from({ length: MAX_ATTEMPTS - 1 }, () => { // the sample attempt holds one slot
+      const id = startExam(T)!; // makes room by dropping finished, idle or stalled attempts
+      expect(saveAnswerFor(id, L1Q2, { choice: "B" }, T)).toMatchObject({ ok: true });
+      return id;
+    });
+    // full of exams in progress: refuse rather than drop one
     expect(startExam(T)).toBeNull();
-    for (const id of running) expect(getRunnerView(id, T)).toMatchObject({ state: "running" });
-    for (const skill of SKILLS) await advance(running[0], skill, T + MIN);
-    const fresh = startExam(T + 2 * MIN);
-    expect(fresh).not.toBeNull();
-    expect(getRunnerView(running[0], T + 2 * MIN)).toBeNull();
-    expect(getRunnerView(running[1], T + 2 * MIN)).toMatchObject({ state: "running" });
+    for (const id of answering) expect(getRunnerView(id, T)).toMatchObject({ state: "running" });
+
+    // once the oldest has run out of time and stalled, it makes room
+    const later = T + 26 * MIN;
+    const fresh = startExam(later)!;
+    expect(getRunnerView(answering[0], later)).toBeNull();
+    expect(getRunnerView(answering[1], later)).toMatchObject({ state: "section_closed" });
+
+    // a flood of starts that never answer only ever replaces idle attempts
+    const idle = startExam(later)!;
+    expect(getRunnerView(fresh, later)).toBeNull();
+    startExam(later);
+    expect(getRunnerView(idle, later)).toBeNull();
+    expect(getRunnerView(answering[2], later)).not.toBeNull();
   });
 });
