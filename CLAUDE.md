@@ -24,4 +24,4 @@ Implement in small, reviewable patches. After each milestone run typecheck, lint
 ## Commands
 
 - `npm run typecheck` · `npm run lint` · `npm test` · `npm run validate:content` · `npm run build`
-- `npm run e2e` builds, starts the app on port 3100 and saves screenshots to `tests/e2e/screenshots/`.
+- `npm run e2e` builds, starts the app on port 4310 and saves screenshots to `tests/e2e/screenshots/`.
