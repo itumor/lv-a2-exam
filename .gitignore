@@ -43,3 +43,6 @@ next-env.d.ts
 # tests
 /test-results/
 /playwright-report/
+
+# local agent state written by hooks
+/.claude/
