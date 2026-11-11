@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.claude
+.env*
+test-results
+playwright-report
+tests/e2e/screenshots
+tsconfig.tsbuildinfo
