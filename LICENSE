@@ -1,0 +1,47 @@
+Personal Use Only License (Source-Available, Non-Commercial, No Redistribution)
+
+Copyright (c) 2026 Ebrahim Ramadan (github.com/itumor). All rights reserved
+except as expressly granted below.
+
+1. GRANT
+   You may view the source code and run an unmodified copy of the software
+   on your own devices for personal, private, non-commercial purposes such as
+   learning, study and practising for an exam. The platform terms of GitHub
+   also let you view this repository and fork it on GitHub; that is the only
+   copying allowed.
+
+2. WHAT YOU MAY NOT DO
+   Without prior written permission from the copyright holder, you may not:
+   a. use the software, or any part of it, commercially or to make money in
+      any way, directly or indirectly (selling, licensing, renting, hosting
+      it as a paid or ad-supported service, bundling it in a paid product,
+      using it in paid training, consulting or client work, or using it to
+      promote a business);
+   b. copy, reproduce, redistribute, republish, sublicense or share the
+      software or any part of it, in source or any other form, except as
+      stated in section 1;
+   c. modify it, or create or distribute derivative works based on it;
+   d. copy its code, content, exam materials, text, design or structure into
+      another project, including by training or fine-tuning a model on it
+      for commercial use;
+   e. remove or alter this license or the copyright notice.
+
+3. THIRD-PARTY MATERIAL
+   Third-party libraries used by this project remain under their own
+   licenses. This license applies only to the original work of the copyright
+   holder. Names of exams, institutions and sources mentioned belong to
+   their respective owners; nothing here grants rights in them.
+
+4. TERMINATION
+   Any breach ends your rights under this license immediately. You must then
+   stop using the software and delete all copies.
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+   OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+   AND NON-INFRINGEMENT. THE COPYRIGHT HOLDER IS NOT LIABLE FOR ANY CLAIM,
+   DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
+
+6. PERMISSION
+   To ask for permission for any use not allowed above, contact the
+   copyright holder through github.com/itumor.
