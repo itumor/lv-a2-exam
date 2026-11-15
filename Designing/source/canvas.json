@@ -1,0 +1,176 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "DesktopFeedback.dc.html": {
+      "expand": "fill",
+      "h": 800,
+      "is_interactive": true,
+      "title": "7 AI feedback (desktop)",
+      "w": 1280,
+      "x": 8160,
+      "y": 1300
+    },
+    "DesktopHome.dc.html": {
+      "expand": "fill",
+      "h": 800,
+      "is_interactive": true,
+      "title": "1 Home (desktop)",
+      "w": 1280,
+      "x": 0,
+      "y": 1300
+    },
+    "DesktopListening.dc.html": {
+      "expand": "fill",
+      "h": 800,
+      "is_interactive": true,
+      "title": "2 Listening (desktop)",
+      "w": 1280,
+      "x": 1360,
+      "y": 1300
+    },
+    "DesktopReading.dc.html": {
+      "expand": "fill",
+      "h": 800,
+      "is_interactive": true,
+      "title": "3 Reading (desktop)",
+      "w": 1280,
+      "x": 2720,
+      "y": 1300
+    },
+    "DesktopResults.dc.html": {
+      "expand": "fill",
+      "h": 800,
+      "is_interactive": true,
+      "title": "6 Results (desktop)",
+      "w": 1280,
+      "x": 6800,
+      "y": 1300
+    },
+    "DesktopSpeaking.dc.html": {
+      "expand": "fill",
+      "h": 800,
+      "is_interactive": true,
+      "title": "5 Speaking (desktop)",
+      "w": 1280,
+      "x": 5440,
+      "y": 1300
+    },
+    "DesktopWriting.dc.html": {
+      "expand": "fill",
+      "h": 800,
+      "is_interactive": true,
+      "title": "4 Writing (desktop)",
+      "w": 1280,
+      "x": 4080,
+      "y": 1300
+    },
+    "Feedback.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "7 AI feedback",
+      "w": 390,
+      "x": 2820,
+      "y": 0
+    },
+    "Listening.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "2 Listening",
+      "w": 390,
+      "x": 470,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "1 Home",
+      "w": 390,
+      "x": 0,
+      "y": 0
+    },
+    "Reading.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "3 Reading",
+      "w": 390,
+      "x": 940,
+      "y": 0
+    },
+    "Results.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "6 Results",
+      "w": 390,
+      "x": 2350,
+      "y": 0
+    },
+    "Speaking.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "5 Speaking",
+      "w": 390,
+      "x": 1880,
+      "y": 0
+    },
+    "Writing.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "4 Writing",
+      "w": 390,
+      "x": 1410,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-11T12:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "t1": {
+      "kind": "title1",
+      "maxW": 3210,
+      "text": "Latvian A2 exam simulator — mobile flow",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "t2": {
+      "kind": "title1",
+      "maxW": 8000,
+      "text": "Latvian A2 exam simulator — desktop web flow",
+      "w": 240,
+      "x": 0,
+      "y": 1000
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Listening.dc.html",
+    "Reading.dc.html",
+    "Writing.dc.html",
+    "Speaking.dc.html",
+    "Results.dc.html",
+    "Feedback.dc.html",
+    "DesktopHome.dc.html",
+    "DesktopListening.dc.html",
+    "DesktopReading.dc.html",
+    "DesktopWriting.dc.html",
+    "DesktopSpeaking.dc.html",
+    "DesktopResults.dc.html",
+    "DesktopFeedback.dc.html"
+  ],
+  "pages": [],
+  "title": "Latvian A2 Exam Simulator"
+}

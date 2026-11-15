@@ -1,0 +1,51 @@
+:root {
+  --font: Nunito, system-ui, sans-serif;
+
+  --ground: #F5F4FB;
+  --surface: #FFFFFF;
+  --ink: #1F1B3A;
+  --ink-soft: #4A4664;
+  --muted: #5E5A78;
+  --line: #E3E0F2;
+  --track: #DAD6EE;
+  --track-soft: #E6E3F3;
+
+  --primary: #5A3FD6;
+  --primary-shadow: #3F2AA8;
+  --primary-text: #4B32C3;
+  --primary-text-hover: #35228F;
+  --primary-tint: #ECE8FF;
+  --on-primary-soft: #E4DEFF;
+
+  --accent: #FFC83D;
+  --accent-shadow: #C99400;
+  --accent-tint: #FFF1CC;
+  --accent-text: #6B4A00;
+
+  --listening: #1668C7;
+  --listening-shadow: #0F4F9C;
+  --listening-tint: #E3EFFC;
+  --reading: #16794F;
+  --reading-shadow: #0F5C3B;
+  --reading-tint: #DFF3EA;
+  --writing: #B8470E;
+  --writing-shadow: #8A3409;
+  --writing-tint: #FCE9DC;
+  --speaking: #A8247A;
+  --speaking-shadow: #7D1A5A;
+  --speaking-tint: #F9E1F0;
+
+  --danger: #B42318;
+  --danger-tint: #FDE7E4;
+
+  --radius-key: 12px;
+  --radius-control: 14px;
+  --radius-button: 16px;
+  --radius-card: 18px;
+  --radius-card-lg: 24px;
+  --radius-hero: 28px;
+
+  --touch-min: 44px;
+  --button-h: 52px;
+  --content-max: 1120px;
+}

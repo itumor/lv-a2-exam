@@ -1,0 +1,51 @@
+{
+  "name": "Latvian A2 Exam Simulator (working name: Kāpnes A2)",
+  "font": {
+    "family": "Nunito, system-ui, sans-serif",
+    "weights": { "body": 700, "strong": 800, "heading": 900, "light": 500 },
+    "sizes": {
+      "mobile": { "h1": 26, "question": 22, "h2": 17, "body": 15, "option": 17, "small": 13, "label": 12 },
+      "desktop": { "h1": 34, "question": 30, "h2": 20, "body": 17, "option": 19, "small": 14, "label": 13 }
+    }
+  },
+  "color": {
+    "ground": "#F5F4FB",
+    "surface": "#FFFFFF",
+    "ink": "#1F1B3A",
+    "inkSoft": "#4A4664",
+    "muted": "#5E5A78",
+    "line": "#E3E0F2",
+    "track": "#DAD6EE",
+    "trackSoft": "#E6E3F3",
+    "primary": "#5A3FD6",
+    "primaryShadow": "#3F2AA8",
+    "primaryText": "#4B32C3",
+    "primaryTextHover": "#35228F",
+    "primaryTint": "#ECE8FF",
+    "onPrimarySoft": "#E4DEFF",
+    "accent": "#FFC83D",
+    "accentShadow": "#C99400",
+    "accentTint": "#FFF1CC",
+    "accentText": "#6B4A00",
+    "listening": { "base": "#1668C7", "shadow": "#0F4F9C", "tint": "#E3EFFC", "text": "#0F4F9C", "soft": "#8DB9EC" },
+    "reading": { "base": "#16794F", "shadow": "#0F5C3B", "tint": "#DFF3EA", "text": "#0F5C3B" },
+    "writing": { "base": "#B8470E", "shadow": "#8A3409", "tint": "#FCE9DC", "text": "#8A3409" },
+    "speaking": { "base": "#A8247A", "shadow": "#7D1A5A", "tint": "#F9E1F0", "text": "#7D1A5A" },
+    "pass": { "base": "#16794F", "tint": "#DFF3EA", "text": "#0F5C3B" },
+    "fail": { "base": "#B8470E", "tint": "#FCE9DC", "text": "#8A3409" },
+    "danger": { "base": "#B42318", "tint": "#FDE7E4" }
+  },
+  "radius": { "chip": 999, "key": 12, "control": 14, "button": 16, "card": 18, "cardLarge": 24, "hero": 28 },
+  "border": { "width": 2, "chunkyBottom": 4, "heroBottom": 6 },
+  "size": { "touchMin": 44, "button": 52, "optionMobile": 56, "optionDesktop": 64 },
+  "layout": {
+    "mobile": { "frame": "390x844", "gutter": 20 },
+    "desktop": { "frame": "1280x800", "contentMax": 1120, "gutter": "clamp(16px, 4vw, 40px)", "columnGap": 40 }
+  },
+  "pattern": {
+    "chunkyButton": "filled background, 16px radius, 4px darker bottom border, weight 900",
+    "chunkyCard": "white, 2px line border with 4-5px bottom border",
+    "examHeader": "close button, 4-segment progress (done = primary, current = skill colour), countdown chip",
+    "passMarker": "vertical ink line at 60% of every score bar (9 of 15)"
+  }
+}
